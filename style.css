@@ -6,11 +6,12 @@
       padding: 0;
       box-sizing: border-box;
       font-family: "Roboto Condensed", sans-serif;
+      /* border: 0.1rem solid red; */
 }
 
 :root{
       --lead: #2d302c;
-      --gold-finger: #f2b012;
+      --gold-finger: rgba(228, 27, 8, 0.837);
       --eye-ball: #FFFdF7;
       --hint-yellow: #FCF1CC;
       --pure-white: #fff;
@@ -44,9 +45,16 @@ li{
 
 .warapper{
       max-width: 1400px;
-      background-color: gold;
+      background-color: var(--pure-white);
       margin: auto;
       padding-inline: 1.5rem;
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+      display: block;
 }
 
 /*----------------------------Header Styling-------------*/
@@ -57,6 +65,7 @@ li{
 .logo {
       font-size: 2rem;
       font-weight: bold;
+      color:var(--gold-finger) ;
 }
 
 .btn {
@@ -99,6 +108,17 @@ li{
       display: none;
 }
 
+.mobile-menu {
+      display: none;
+}
+
+
+
+
+
+
+/* --------------------------Media quries----------------------- */
+
 @media screen and (max-width: 780px){
       .navlist, 
       .desktop-action .bntn{
@@ -106,6 +126,102 @@ li{
       }
       
       .desktop-action .hemburger{
+            font-size: 1.5rem;
             display: block;
+            left: 50%;
+           
       }
+
+      .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      position: absolute;
+      top: 20%;
+      left: -100%;
+      transform: translateX(-50%);
+      width: 20rem;
+      padding: 2rem;
+      background: var(--pure-white);
+      border: 0.1rem  solid var(--gold-finger);
+      border-radius: 2rem;
+      box-shadow: 
+      rgba(0, 0, 0, 0.5) 8px 8px 8px,
+      rgba(0,0,0, 0.05) 8px 8px 8px inset;
+      transition: 0.5s all ease-in-out;
+      }
+
+      .mobile-menu-active{
+            left: 50%;
+            transform: translate(-50%);
+      }
+
+
+}
+
+/*---------section styling------------*/
+
+.hero-section {
+      background: rgb(242, 242, 239);
+      min-height: cal(100vh-14vh);
+}
+
+
+.content{
+      margin-left: 20px;
+}
+
+.content,
+.image-contaner {
+      flex: 1;
+}
+
+/* .img-content{
+      height: 400px;
+} */
+
+.img1{
+      max-height: 600px;
+}
+
+h1 {
+      font-size: 5vw;
+      color: var(--lead);
+}
+
+.psetion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+h1 span {
+      color: var(--gold-finger);
+}
+
+p{
+      font-size: 1.25rem;
+      color: rgb(109, 79, 31);
+      font-weight:600;
+      
+}
+
+.para {
+      margin-block:2rem;
+      max-width: 550px;
+
+}
+
+.socal-icon{
+      background: var(--hint-yellow);
+      width: 3rem;
+      aspect-ratio: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.1)
+      0 2px 2px 1px;
+      
 }
