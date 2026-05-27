@@ -32,6 +32,7 @@ a {
       align-items: center;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      scroll-margin-left: 50px;
       
 
 }
@@ -50,6 +51,10 @@ li {
 
 .gap-3 {
       gap: 3rem;
+}
+
+.gap-1 {
+      gap: 1rem;
 }
 
 .warapper {
@@ -145,6 +150,30 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------Media quries----------------------- */
 
 @media screen and (max-width: 780px) {
@@ -206,6 +235,11 @@ img {
             gap: 4rem;
       }
 }
+
+
+
+
+
 
 /*---------section styling------------*/
 
@@ -278,7 +312,7 @@ p {
 
 
 .img1 {
-      max-height: 490px;
+      max-height: 45rem;
       border-radius: 0 0 50px 60px;
 
       filter: drop-shadow(0, 25px 35px rgba(0, 0, 0, 0.65));
@@ -328,3 +362,74 @@ h5 {
 .service-card h3 {
       margin-top: 1.5rem;
 }
+
+
+/* --------------------section 02---------------------- */
+
+.order-card {
+      /* flex: 1; */
+      flex-basis: 200px;
+      background: var(--pure-white);
+      padding: 0 1rem 1rem;
+      border: 0.1rem solid var(--gold-finger);
+      border-radius: 2rem;
+      box-shadow:
+            rgba(0, 0, 0, 0.5) 8px 8px 8px,
+            rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+            transition: 0.5s all ease-in-out;
+
+      }
+
+h4{
+      font-size: 1.4rem;
+      color: var(--lead);
+}
+
+.order-card .price {
+      font-size: 1.4rem;
+      padding-top: 1.3rem 0 1rem 0 ;
+}
+
+.style {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      scroll-margin-left: 50px;
+      
+      
+}
+
+
+.card-image {
+      width: 16rem;
+      filter: drop-shadow(
+            rgba(49, 43, 43, 0.467) 0 10px 10px
+      );
+}
+
+
+
+.order-card{
+      width: 100%;
+}
+
+
+
+
+/* ----------------Section 03 ----------------*/
+
+.img2{
+      height: 600px;
+      width:auto;
+   
+}
+
+style2{
+      justify-content: left;
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
