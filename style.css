@@ -30,10 +30,10 @@ a {
 .flex {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      /* justify-content: center; */
       flex-wrap: wrap;
-      scroll-margin-left: 50px;
-      
+      /* scroll-margin-left: 50px; */
+
 
 }
 
@@ -64,6 +64,7 @@ li {
       padding-inline: 1.5rem;
 }
 
+
 img {
       max-width: 100%;
       height: auto;
@@ -84,7 +85,13 @@ img {
       margin-top: 4rem;
 }
 
+.mt-half {
+      margin-top: 0.5rem;
+}
 
+.mt-one {
+      margin: 1rem;
+}
 
 
 
@@ -147,100 +154,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------Media quries----------------------- */
-
-@media screen and (max-width: 780px) {
-
-      /* header styling */
-      .navlist,
-      .desktop-action .bntn {
-            display: none;
-      }
-
-      .desktop-action .hemburger {
-            font-size: 1.5rem;
-            display: block;
-            left: 50%;
-
-      }
-
-      .mobile-menu {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            position: absolute;
-            top: 20%;
-            left: -100%;
-            transform: translateX(-50%);
-            width: 20rem;
-            padding: 2rem;
-            background: var(--pure-white);
-            border: 0.1rem solid var(--gold-finger);
-            border-radius: 2rem;
-            box-shadow:
-                  rgba(0, 0, 0, 0.5) 8px 8px 8px,
-                  rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
-            transition: 0.5s all ease-in-out;
-      }
-
-      .mobile-menu-active {
-            left: 50%;
-            transform: translate(-50%);
-      }
-
-      /* ----hero section ---*/
-
-      h1 {
-            font-size: 3.6rem;
-      }
-
-      .content {
-            padding-top: 3rem;
-      }
-
-      .gap-2 {
-            gap: 1.4rem;
-      }
-
-      .gap-4 {
-            gap: 4rem;
-      }
-}
-
-
-
-
-
-
 /*---------section styling------------*/
 
 .hero-section {
@@ -255,7 +168,8 @@ img {
 } */
 
 .content,
-.img-content {
+.img-container,
+.service-card {
       flex: 1;
       flex-basis: 300px;
 }
@@ -294,7 +208,7 @@ p {
       background: var(--hint-yellow);
       width: 3rem;
       border-radius: 0.5rem;
-      aspect-ratio: 1rem;
+      aspect-ratio: 1;
       font-size: 1.2rem;
       text-align: center;
       line-height: 3rem;
@@ -320,20 +234,8 @@ p {
 
 /* ---------------------card-sec------------ */
 
-.image-contaner {
-      width: 120px;
-      height: 120px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
 
-.image-contaner img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-}
+
 
 
 /* Section styling 01 */
@@ -341,7 +243,7 @@ h2 {
       font-size: 3rem;
       letter-spacing: .1rem;
       color: var(--gold-finger);
-      text-transform: uppercase;
+      text-transform: capitalize;
 }
 
 h3 {
@@ -353,22 +255,24 @@ h3 {
 
 h5 {
       text-transform: capitalize;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       letter-spacing: 0.2rem;
+      text-transform: uppercase;
       color: black;
 }
 
 
 .service-card h3 {
       margin-top: 1.5rem;
+      margin-bottom: 0.7rem;
 }
 
 
 /* --------------------section 02---------------------- */
 
 .order-card {
-      /* flex: 1; */
-      flex-basis: 200px;
+      flex: 1;
+      flex-basis: 300px;
       background: var(--pure-white);
       padding: 0 1rem 1rem;
       border: 0.1rem solid var(--gold-finger);
@@ -376,60 +280,171 @@ h5 {
       box-shadow:
             rgba(0, 0, 0, 0.5) 8px 8px 8px,
             rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
-            transition: 0.5s all ease-in-out;
+      transition: 0.5s all ease-in-out;
 
-      }
+}
 
-h4{
+.order-card img {
+      width: 15rem;
+      filter: drop-shadow(rgba(0, 128, 0, 0.804) 0 10px 10px);
+}
+
+h4 {
       font-size: 1.4rem;
       color: var(--lead);
 }
 
 .order-card .price {
       font-size: 1.4rem;
-      padding-top: 1.3rem 0 1rem 0 ;
+      padding-top: 1.3rem 0 2rem 0;
 }
 
-.style {
+/* .style {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       scroll-margin-left: 50px;
-      
-      
-}
 
 
-.card-image {
+} */
+
+
+/* .card-image {
       width: 16rem;
-      filter: drop-shadow(
-            rgba(49, 43, 43, 0.467) 0 10px 10px
-      );
-}
+      filter: drop-shadow(rgba(49, 43, 43, 0.467) 0 10px 10px);
+} */
 
 
 
-.order-card{
+/* .order-card {
       width: 100%;
-}
+} */
 
 
 
 
 /* ----------------Section 03 ----------------*/
 
-.img2{
-      height: 600px;
-      width:auto;
-   
-}
+.reviw-container {
+      /* background-color: rgb(102, 102, 239); */
+      width: 650px;
+      max-width: 100%;
+      flex: 1;
 
-style2{
-      justify-content: left;
 }
 
 .swiper {
       width: 100%;
       height: 100%;
-    }
+}
+
+.profile {
+      width: 4rem;
+      aspect-ratio: 1;
+      border-radius: 100vw;
+      overflow: hidden;
+}
+
+.profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.fa-star {
+      color: green;
+}
+
+.arrow {
+      width: 2.5rem;
+      aspect-ratio: 1;
+      border-radius: 100vw;
+      background: wheat;
+      color: rgb(91, 6, 6);
+      text-align: center;
+      line-height: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------Media quries----------------------- */
+
+@media screen and (max-width: 780px) {
+
+      /* header styling */
+      .navlist,
+      .desktop-action .btn {
+            display: none;
+      }
+
+      .desktop-action .hemburger {
+            font-size: 1.5rem;
+            display: block;
+            left: 50%;
+
+      }
+
+      .mobile-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            position: absolute;
+            top: 20%;
+            left: -100%;
+            transform: translateX(-50%);
+            width: 20rem;
+            padding: 2rem;
+            background: var(--pure-white);
+            border: 0.1rem solid var(--gold-finger);
+            border-radius: 2rem;
+            box-shadow:
+                  rgba(0, 0, 0, 0.5) 8px 8px 8px,
+                  rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+            transition: 0.5s all ease-in-out;
+      }
+
+      .mobile-menu-active {
+            left: 50%;
+            transform: translate(-50%);
+      }
+
+
+      /* ----section styling ---*/
+
+      /* hero styling */
+
+      h1 {
+            font-size: 3.6rem;
+      }
+
+      .content {
+            padding-top: 3rem;
+      }
+
+      .gap-2 {
+            gap: 1.4rem;
+      }
+
+      .gap-4 {
+            gap: 4rem;
+      }
+
+      /* section styling 01 */
+      h2 {
+            font-size: 3rem;
+      }
+}

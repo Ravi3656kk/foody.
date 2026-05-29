@@ -13,10 +13,7 @@
     />
 
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -102,7 +99,7 @@
               We wil fill your tummy with delecious <br />
               food with fast delevery.
             </p>
-            <div class="flex posetion gap-2">
+            <div class="flex gap-2">
               <a href="#" class="btn">Order now</a>
 
               <a href="#" class="socal-icon">
@@ -120,8 +117,8 @@
             </div>
           </div>
 
-          <div class="img-content">
-            <img src="./assets/delevery-boy_2.png" alt="" class="img1" />
+          <div class="img-container">
+            <img src="./assets/delevery-boy_2a.png" style="width: 25rem;" alt="" />
           </div>
         </div>
       </section>
@@ -133,26 +130,30 @@
             <h2>How does it works</h2>
           </div>
 
-          <div class="flex text-center text-center mt-4 gap-4">
+          <div class="flex text-center text-center gap-4 mt-4">
             <div class="service-card">
-              <div class="image-contaner">
-                <img src="assets/eass-to-order .png" alt="#" />
+              <div class="img-contaner">
+                <img
+                  src="assets/eassy-to-order.png"
+                  style="width: 6rem"
+                  alt="#"
+                />
               </div>
               <h3>Eassy to order</h3>
               <p>you only few steps in orderring food</p>
             </div>
 
             <div class="service-card">
-              <div class="image-contaner">
-                <img src="assets/taste.png" alt="#" />
+              <div class="img-contaner">
+                <img src="assets/taste.png" style="width: 6rem" alt="#" />
               </div>
               <h3>best quality</h3>
               <p>Qualites bises thats everyone expecting with us</p>
             </div>
 
             <div class="service-card">
-              <div class="image-contaner">
-                <img src="assets/fast_del1.png" alt="#" />
+              <div class="img-contaner">
+                <img src="assets/fast_del1.png" style="width: 6rem" alt="#" />
               </div>
               <h3>rapid delevry</h3>
               <p>Delevry it's alwas ontime Even faster</p>
@@ -161,77 +162,178 @@
         </div>
       </section>
 
+      <!-- section 02 -->
+
       <section>
-        <div class="r p-top">
+        <div class="warapper p-top">
           <div class="text-center">
             <h5>Our Menu</h5>
             <h2>The most Popular</h2>
           </div>
 
-          <!-- <div class="card-list text-center style mt-4 gap-2">
+          <!-- <div class="card-list  text-center flex  mt-4 gap-2  ">
             <div class="order-card">
               <div class="card-image">
-                <img src="assets/burger.png" alt="">
+                <img src="assets/burger.png">
               </div>
               <h4>
                 Chij and pateto burger
               </h4>
               <h4 class="price">₹149</h4>
-              <a href="#" class="btn">Add to card</a>
-            
+              <a href="#" class="btn">Add to cart</a>
           </div> -->
         </div>
       </section>
 
+      <!-- section 03 -->
+
       <section>
-        <div class="wrapper p-top ">
-          <div class="content">
-            <img src="assets/delevry boy.png" class="img2" alt="#" />
+        <div class="wrapper p-top flex gap-3">
+          <div class="img-container">
+            <img src="assets/delevry boy2b.png" style="height: 35rem" />
           </div>
 
-          <div class="content style2">
+          <div class="content">
             <h5>our reviews</h5>
             <h2>What they say?</h2>
 
             <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+
+            <div class="reviw-container">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper mt-4">
+                  <div class="swiper-slide">
+                    <div class="flex gap-2" style="margin-bottom: .5rem;">
+                      <div class="profile">
+                        <img src="/assets/user1.png" alt="" />
+                      </div>
+
+                      <div class="mt-half">
+                        <h4>Ajay devel</h4>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      it's realy goods over all spesicaly test of food too
+                      delicious perfect spices each incredint using in perfect
+                      way i love this. if some looks spices food then you will
+                      try atlest one time
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex gap-2">
+                      <div class="profile">
+                        <img src="/assets/user2.png" alt="" />
+                      </div>
+
+                      <div class="mt-half">
+                        <h4>disha patani</h4>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Hit the spot perfectly! Super fast delivery, neat
+                      packaging, and the food was incredibly fresh and
+                      flavorful. Will definitely order again
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex gap-2">
+                      <div class="profile">
+                        <img src="/assets/user3.jpg" alt="" />
+                      </div>
+
+                      <div class="mt-half">
+                        <h4>manohar</h4>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Top-notch speed and taste! The packaging kept everything
+                      perfectly intact, and every single bite was full of
+                      flavor. Highly recommended!
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex gap-2">
+                      <div class="profile">
+                        <img src="/assets/user4.jpg" alt="" />
+                      </div>
+
+                      <div class="mt-half">
+                        <h4>shuvam singh</h4>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Hit the spot perfectly! Super fast delivery, neat
+                      packaging, and the food was incredibly fresh and
+                      flavorful. Will definitely order again
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex gap-2">
+                      <div class="profile">
+                        <img src="/assets/user5.png" alt="" />
+                      </div>
+
+                      <div class="mt-half">
+                        <h4>somya singh</h4>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="para">
+                      Incredibly fast delivery and the food was spot on! Fresh,
+                      hot, and packed perfectly. A flawless 5-star experience
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex between ">
+                  <a href="#" class="arrow" id="prev">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                  <a href="#" class="arrow" id="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- footer part -->
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
+  
 </html>
