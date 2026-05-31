@@ -13,7 +13,9 @@
     />
 
     <link
-      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -118,7 +120,11 @@
           </div>
 
           <div class="img-container">
-            <img src="./assets/delevery-boy_2a.png" style="width: 25rem;" alt="" />
+            <img
+              class="hero-image"
+              src="./assets/delevery-boy_2a.png"
+              alt="Food delivery person"
+            />
           </div>
         </div>
       </section>
@@ -130,14 +136,10 @@
             <h2>How does it works</h2>
           </div>
 
-          <div class="flex text-center text-center gap-4 mt-4">
+          <div class="services-grid text-center mt-4">
             <div class="service-card">
               <div class="img-contaner">
-                <img
-                  src="assets/eassy-to-order.png"
-                  style="width: 6rem"
-                  alt="#"
-                />
+                <img src="assets/eassy-to-order.png" alt="Easy order" />
               </div>
               <h3>Eassy to order</h3>
               <p>you only few steps in orderring food</p>
@@ -145,7 +147,7 @@
 
             <div class="service-card">
               <div class="img-contaner">
-                <img src="assets/taste.png" style="width: 6rem" alt="#" />
+                <img src="assets/taste.png" alt="Best quality" />
               </div>
               <h3>best quality</h3>
               <p>Qualites bises thats everyone expecting with us</p>
@@ -153,7 +155,7 @@
 
             <div class="service-card">
               <div class="img-contaner">
-                <img src="assets/fast_del1.png" style="width: 6rem" alt="#" />
+                <img src="assets/fast_del1.png" alt="Fast delivery" />
               </div>
               <h3>rapid delevry</h3>
               <p>Delevry it's alwas ontime Even faster</p>
@@ -171,6 +173,53 @@
             <h2>The most Popular</h2>
           </div>
 
+          <div class="card-list text-center mt-4">
+            <div class="order-card" data-id="burger" data-name="Chiz and pateto burger" data-price="149" data-image="assets/burger.png">
+              <div class="card-image">
+                <img src="assets/burger.png" alt="Chiz and pateto burger" />
+              </div>
+              <h4> pateto burger</h4>
+              <h4 class="price">&#8377;149</h4>
+              <a href="#" class="btn add-cart-btn">Add to cart</a>
+            </div>
+
+            <div class="order-card" data-id="pizza" data-name="Cheese loaded pizza" data-price="249" data-image="assets/pizza.png">
+              <div class="card-image">
+                <img src="assets/pizza.png" alt="Cheese loaded pizza" />
+              </div>
+              <h4>Cheese loaded pizza</h4>
+              <h4 class="price">&#8377;249</h4>
+              <a href="#" class="btn add-cart-btn">Add to cart</a>
+            </div>
+
+            <div class="order-card" data-id="sandwich" data-name="Fresh veg sandwich" data-price="129" data-image="assets/Sandwich.png">
+              <div class="card-image">
+                <img src="assets/Sandwich.png" alt="Fresh veg sandwich" />
+              </div>
+              <h4>Fresh veg sandwich</h4>
+              <h4 class="price">&#8377;129</h4>
+              <a href="#" class="btn add-cart-btn">Add to cart</a>
+            </div>
+
+            <div class="order-card" data-id="samosa" data-name="Crispy samosa" data-price="59" data-image="assets/samosa.png">
+              <div class="card-image">
+                <img src="assets/samosa.png" alt="Crispy samosa" />
+              </div>
+              <h4>Crispy samosa</h4>
+              <h4 class="price">&#8377;59</h4>
+              <a href="#" class="btn add-cart-btn">Add to cart</a>
+            </div>
+
+            <div class="order-card" data-id="paneer-roll" data-name="Paneer roll" data-price="139" data-image="assets/paneer_roll.png">
+              <div class="card-image">
+                <img src="assets/paneer_roll.png" alt="Paneer roll" />
+              </div>
+              <h4>Paneer roll</h4>
+              <h4 class="price">&#8377;139</h4>
+              <a href="#" class="btn add-cart-btn">Add to cart</a>
+            </div>
+          </div>
+
           <!-- <div class="card-list  text-center flex  mt-4 gap-2  ">
             <div class="order-card">
               <div class="card-image">
@@ -182,18 +231,155 @@
               <h4 class="price">₹149</h4>
               <a href="#" class="btn">Add to cart</a>
           </div> -->
+
+          <!-- cart tab -->
+
+          <div class="cart-tab">
+            <h3>Your cart</h3>
+
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-list">
+              <div class="item">
+                <div class="item-img">
+                  <img src="/assets/burger.png" alt="#">
+                </div>
+                <div>
+                  <h4>pateto & chiz burger</h4>
+                  <h4 class="item-total">₹149</h4>
+                </div>
+                <div class="flex">
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </a>
+                  <h4 class="quantity-value">1</h4>
+                  <a href="#" class="quantity-btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="total-container">
+              <h4>Total:</h4>
+              <h4 class="cart-total">₹0.0</h4>
+            </div>
+
+            <div class="btn-container flex gap-2">
+              <a href="#" class="btn close-btn">Close</a>
+              <a href="#" class="btn ">checkout</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- section 03 -->
 
       <section>
-        <div class="wrapper p-top flex gap-3">
+        <div class="wrapper p-top review-section flex gap-3">
           <div class="img-container">
-            <img src="assets/delevry boy2b.png" style="height: 35rem" />
+            <img class="review-image" src="assets/delevry boy2b.png" alt="Delivery partner" />
           </div>
 
-          <div class="content">
+          <div class="content reviw-container">
             <h5>our reviews</h5>
             <h2>What they say?</h2>
 
@@ -203,9 +389,9 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper mt-4">
                   <div class="swiper-slide">
-                    <div class="flex gap-2" style="margin-bottom: .5rem;">
+                    <div class="review-profile flex gap-2">
                       <div class="profile">
-                        <img src="/assets/user1.png" alt="" />
+                        <img src="assets/user1.png" alt="Ajay devel" />
                       </div>
 
                       <div class="mt-half">
@@ -228,7 +414,7 @@
                   <div class="swiper-slide">
                     <div class="flex gap-2">
                       <div class="profile">
-                        <img src="/assets/user2.png" alt="" />
+                        <img src="assets/user2.png" alt="disha patani" />
                       </div>
 
                       <div class="mt-half">
@@ -250,7 +436,7 @@
                   <div class="swiper-slide">
                     <div class="flex gap-2">
                       <div class="profile">
-                        <img src="/assets/user3.jpg" alt="" />
+                        <img src="assets/user3.jpg" alt="manohar" />
                       </div>
 
                       <div class="mt-half">
@@ -272,7 +458,7 @@
                   <div class="swiper-slide">
                     <div class="flex gap-2">
                       <div class="profile">
-                        <img src="/assets/user4.jpg" alt="" />
+                        <img src="assets/user4.jpg" alt="shuvam singh" />
                       </div>
 
                       <div class="mt-half">
@@ -294,7 +480,7 @@
                   <div class="swiper-slide">
                     <div class="flex gap-2">
                       <div class="profile">
-                        <img src="/assets/user5.png" alt="" />
+                        <img src="assets/user5.png" alt="somya singh" />
                       </div>
 
                       <div class="mt-half">
@@ -314,7 +500,7 @@
                   </div>
                 </div>
 
-                <div class="flex between ">
+                <div class="flex between">
                   <a href="#" class="arrow" id="prev">
                     <i class="fa-solid fa-arrow-left-long"></i>
                   </a>
@@ -329,11 +515,137 @@
       </section>
     </main>
 
+    <!-- section 04 -->
+
+    <section>
+      <div class="warapper p-top">
+        <div class="app-container flex between">
+          <div class="img-container">
+            <img src="assets/mobile-app.png" alt="" />
+          </div>
+          <div class="content">
+            <h5>Our apllication</h5>
+            <h2>
+              Simpley way to <br />
+              order your food
+            </h2>
+            <p class="para">
+              Discover food wherever and when ever and get you food delevery
+              quickly.
+            </p>
+            <a href="#" class="btn">Get the app</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sectioin 05 -->
+
+    <section>
+      <div class="warapper p-top">
+        <div class="text-center">
+          <h5>for joining me</h5>
+          <h2>join To Our Newsletter</h2>
+          <p class="para m-auto">
+            we recommend you new delecious cusine, drop your email below to
+            daily Update about us.
+          </p>
+          <label class="input-container flex gap-2">
+            <input type="email" name="email" id="email"
+            placeholder="enter your email address" autocomplete="off">
+            <a href="#" class="btn">Join me</a>
+          </label>
+        </div>
+      </div>
+    </section>
+
     <!-- footer part -->
-    <footer></footer>
+    <footer>
+      <div class="footer-container ">
+        <div class="flex warapper gap-4">
+          <div class="footer-warapper">
+            <a href="#" class="logo">foody.</a>
+
+            <p class="mt-one-half">
+              We wil fill your tummy with delecious <br />
+              food with fast delevery.
+            </p>
+            <div class="flex gap-2  mt-one-half">
+              <a href="#" class="socal-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="socal-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="socal-icon">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="#" class="socal-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <ul class="footer-warapper">
+            <li>
+              <h4>Our Menue</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Spesical</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Popular</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">category</a>
+            </li>
+          </ul>
+
+          <ul class="footer-warapper">
+            <li>
+              <h4>Company</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">why foody.</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Partner with us</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+            
+          </ul>
+          <ul class="footer-warapper">
+            <li>
+              <h4>Support</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Account</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Support center</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">feedback contact</a>
+            </li>
+          </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
-  
 </html>
